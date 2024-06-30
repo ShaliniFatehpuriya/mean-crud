@@ -1,0 +1,33 @@
+/* Toolbar styling */
+mat-toolbar {
+  background-color: #1976d2; /* Material primary color */
+  color: white;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+/* Span inside toolbar */
+mat-toolbar span {
+  font-weight: 500;
+}
+
+/* Button inside toolbar */
+mat-toolbar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: none; /* Prevents text from being uppercased */
+}
+
+mat-toolbar button:hover {
+  background-color: #0056b3;
+}

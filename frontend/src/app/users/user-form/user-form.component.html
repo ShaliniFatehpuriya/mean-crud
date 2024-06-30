@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+  <label for="name"></label>
+  <input type="text" placeholder="name" formControlName="name" />
+  <br />
+  <label for="email"></label>
+  <input type="text" placeholder="email" formControlName="email" />
+  <br />
+  <label for="age"></label>
+  <input type="text" placeholder="age" formControlName="age" />
+  <br />
+  <label for="address"></label>
+  <input type="text" placeholder="address" formControlName="address" />
+  <br />
+  <label for="password"></label>
+  <input type="text" placeholder="password" formControlName="password" />
+  <br />
+  @if (flag) {
+  <button type="button" (click)="onUpdate()" routerLink="/">Update</button>
+  } @else {
+  <button type="button" (click)="onSubmit()" routerLink="/">Submit</button>
+  }
+</form>
